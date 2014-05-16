@@ -1,4 +1,4 @@
-*
-!.gitignore
-!.vimrc
-!.vim
+/*
+!/.gitignore
+!/.vimrc
+!/.vim
