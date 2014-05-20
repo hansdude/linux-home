@@ -2,6 +2,7 @@
 
 :colorscheme desert
 :syntax on
+:set guifont=Droid\ Sans\ Mono\ 16
 :set nobackup
 :set nowritebackup
 :set tabstop=4
