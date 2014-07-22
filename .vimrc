@@ -10,7 +10,7 @@
 :set expandtab
 :set mouse=a
 :map <F2> ggVG"+y
-:map <F3> :qall
+:map <F3> "+yiw
 
 :filetype off
 :filetype plugin indent on
