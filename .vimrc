@@ -1,3 +1,5 @@
+let &runtimepath=expand('~/.vim').','.&runtimepath
+
 :execute pathogen#infect()
 
 :colorscheme desert
