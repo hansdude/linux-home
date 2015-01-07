@@ -19,3 +19,5 @@ let &runtimepath=expand('~/.vim').','.&runtimepath
 :filetype plugin on
 :filetype indent on
 
+" Fix vim-fugitive missing swap directory issue.
+:set directory+=,~/tmp,$TMP
