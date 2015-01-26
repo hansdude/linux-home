@@ -2,6 +2,15 @@ let &runtimepath=expand('~/.vim').','.&runtimepath
 
 :execute pathogen#infect()
 
+function! VisualSelectionSize()
+    if mode() == "V"
+        exe "normal \<ESC>gv"
+        return (line("'>") - line("'<") + 1) . ' lines'
+    else
+        return ''
+    endif
+endfunction
+
 :colorscheme desert
 :syntax on
 :set guifont=Droid\ Sans\ Mono\ 16
@@ -11,6 +20,9 @@ let &runtimepath=expand('~/.vim').','.&runtimepath
 :set shiftwidth=4
 :set expandtab
 :set mouse=a
+:set number
+:set laststatus=2
+:set statusline=%f%=%{VisualSelectionSize()}%8l:%c/%-8L
 :map <F2> ggVG"+y
 :map <F3> "+yiw
 
