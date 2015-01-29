@@ -2,6 +2,8 @@
 !/.gitignore
 !/.gitmodules
 !/.vimrc
+!/.initrc
+!/.editrc
 !/.vim
 !/.tmux.conf
 
