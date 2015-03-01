@@ -22,7 +22,7 @@ endfunction
 :set mouse=a
 :set number
 :set laststatus=2
-:set statusline=%f%=%{VisualSelectionSize()}%8l:%c/%-8L
+:set statusline=%f%m%=%{VisualSelectionSize()}%8l:%c/%-8L
 :map <F2> ggVG"+y
 :map <F3> "+yiw
 
