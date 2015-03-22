@@ -23,6 +23,7 @@ endfunction
 :set number
 :set laststatus=2
 :set statusline=%f%m%=%{VisualSelectionSize()}%8l:%c/%-8L
+:map <F1> :qall
 :map <F2> ggVG"+y
 :map <F3> "+yiw
 
