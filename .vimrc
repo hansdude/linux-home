@@ -27,10 +27,8 @@ endfunction
 :map <F2> ggVG"+y
 :map <F3> "+yiw
 
-:filetype off
 :filetype plugin indent on
-:filetype plugin on
-:filetype indent on
 
 " Fix vim-fugitive missing swap directory issue.
 :set directory+=,~/tmp,$TMP
+
