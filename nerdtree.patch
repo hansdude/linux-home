@@ -1,0 +1,14 @@
+diff --git a/lib/nerdtree/bookmark.vim b/lib/nerdtree/bookmark.vim
+index 248bb07..fe1b8c8 100644
+--- a/lib/nerdtree/bookmark.vim
++++ b/lib/nerdtree/bookmark.vim
+@@ -345,7 +345,8 @@ endfunction
+ function! s:Bookmark.Write()
+     let bookmarkStrings = []
+     for i in s:Bookmark.Bookmarks()
+-        call add(bookmarkStrings, i.name . ' ' . fnamemodify(i.path.str(), ':~'))
++        let path = fnamemodify(i.path.str(), ':.:s?' . getcwd() . '?.?')
++        call add(bookmarkStrings, i.name . ' ' . path)
+     endfor
+ 
+     "add a blank line before the invalid ones
