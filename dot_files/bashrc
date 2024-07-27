@@ -1,2 +1,3 @@
+source "${HOME}/linux-home/backup_dot_files/bashrc"
 VISUAL=/usr/bin/nvim
 set -o vi
